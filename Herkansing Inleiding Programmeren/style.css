@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Figtree", Helvetica, Arial;
+  color: white;
+  background-color: rgb(0, 146, 255);
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.linker-paneel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  width: fit-content;
+}
+
+.linker-paneel {
+  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 764px) {
+  .linker-paneel {
+    grid-template-columns: 1fr;
+  }
+}
+
+.midden-paneel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.midden-paneel img {
+  height: 70vh;
+}
+
+.midden-paneel button,
+.navigatie-button {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: rgb(0, 146, 255);
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.midden-paneel button:hover,
+.navigatie-button:hover {
+  color: rgb(0, 146, 255);
+  background-color: rgb(255, 255, 255);
+}
+
+.linker-paneel button {
+  width: 5em;
+  height: 5em;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.linker-paneel button:hover,
+.rechter-paneel button:hover {
+  box-shadow: inset 0px 0px 9px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rechter-paneel {
+  margin-top: -5em;
+}
+
+.rechter-paneel-logos {
+  display: flex;
+  flex-direction: row;
+}
+
+.rechter-paneel-logos button{
+  margin-right: 1em;
+}
+
+.rechter-paneel-sound{
+  margin-bottom: 2em;
+}
+
+#wit {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(185, 185, 185);
+}
+
+#geel {
+  background-color: rgb(255, 255, 0);
+}
+
+#turquoise {
+  background-color: rgb(64, 224, 208);
+}
+
+#blauw {
+  background-color: rgb(0, 0, 255);
+}
+
+#rood {
+  background-color: rgb(255, 0, 0);
+}
+
+.rechter-paneel button {
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 80px;
+  height: 80px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rechter-paneel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
